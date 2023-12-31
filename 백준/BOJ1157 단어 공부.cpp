@@ -8,11 +8,11 @@ int main() {
 	string c;
 	int a[26] = { 0 };
 	int max = 0;
-	char r;
+	char r = '?';
 
 	cin >> c;
 
-	for (int i = 0; i < c.length(); i++) {
+	for (size_t i = 0; i < c.length(); i++) {
 		if (c[i] > 64 && c[i] < 91) a[c[i] - 'A'] += 1;
 		if (c[i] > 96 && c[i] < 123) a[c[i] - 'a'] += 1;
 	}
