@@ -6,7 +6,6 @@ int main() {
 	cin.tie(NULL);
 
 	char a[101];
-	char b;
 
 	cin >> a;
 	int l = strlen(a);
