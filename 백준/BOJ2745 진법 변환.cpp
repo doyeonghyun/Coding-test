@@ -10,7 +10,7 @@ int main() {
 	cin >> N >> B;
 	int l = N.length();
 	for (int i = 0; i < l; i++) {
-		if (char(N[i]) >= 'A') ans += (int(N[i]) - 55) * pow(B, l - 1 - i);
+		if (int(N[i]) >= 'A') ans += (int(N[i]) - 55) * pow(B, l - 1 - i);
 		else ans += (int(N[i]) - 48) * pow(B, l - 1 - i);
 	}
 
